@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
   <body class="page">
-    <header class="header decorated-zone">
+    <header class="header decorated-zone content-section">
+      <p>REC</p>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
-              День
+              день
             </button>
           </li>
           <li class="header__theme-menu-item">
@@ -32,26 +33,27 @@
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
-              Неон
+              неон
             </button>
           </li>
         </ul>
       </nav>
-      <p>no focus</p>
-      <h1 class="title titles accent-color">
-        Что делать, когда не можешь делать ничего Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </h1>
+      <h1 class="header__title">no focus</h1>
     </header>
+    <p class="header__text accent-color titles">
+      Что делать, когда не можешь делать ничего Или почему нам так сложно
+      сконцентрироваться, особенно когда очень надо
+    </p>
+
     <main class="main">
-      <section class="section-reasons">
+      <section class="section-reasons content-section">
         <h2 class="section__title titles">Почему сосредоточиться так сложно</h2>
         <h3 class="section__sub-title titles accent-color">Многозадачность</h3>
         <p class="section__text">
@@ -76,7 +78,7 @@
           получаешь.
         </p>
       </section>
-      <section class="section-reduced-concentration">
+      <section class="section-reduced-concentration content-section">
         <h2 class="section__title titles">
           Что снижает концентрацию внимания?
         </h2>
@@ -109,15 +111,17 @@
           нужно, чтобы вернуться к работе.
         </p>
       </section>
-      <section class="section-increased-concentration">
+      <section class="section-increased-concentration content-section">
         <h2 class="section__title titles">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <h2 class="section__title titles accent-color">
+        <h2 class="titles accent-color">
           5 простых (на самом деле не очень) советов
         </h2>
-        <h3 class="section__sub-title accent-color titles">
+        <h3
+          class="section__sub-title accent-color titles section-increased-concentration__sub-title"
+        >
           Представьте небо и облака
         </h3>
         <p class="section__text">
@@ -130,14 +134,22 @@
           настоящий момент, а не волноваться о потенциальных проблемах из
           будущего.
         </p>
-        <h3 class="section__sub-title accent-color titles">Включите музыку</h3>
+        <h3
+          class="section__sub-title accent-color titles section-increased-concentration__sub-title"
+        >
+          Включите музыку
+        </h3>
         <p class="section__text">
           Но не любую, и не любимую. Любимая может быть связана с сильными
           положительными эмоциями, которые тоже очень сильно отвлекают. Подойдёт
           тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать
           включить плейлист в «белым шумом» или нейромузыкой.
         </p>
-        <h3 class="section__sub-title accent-color titles">Прогуляйтесь</h3>
+        <h3
+          class="section__sub-title accent-color titles section-increased-concentration__sub-title"
+        >
+          Прогуляйтесь
+        </h3>
         <p class="section__text">
           Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
           показал, что созерцание природы повышает концентрацию, в то время как
@@ -146,14 +158,22 @@
           поступит ещё больше кислорода и он будет лучше работать. Но и простая
           двадцатиминутная прогулка — тоже отличный вариант.
         </p>
-        <h3 class="section__sub-title accent-color titles">Хорошо ешьте</h3>
+        <h3
+          class="section__sub-title accent-color titles section-increased-concentration__sub-title"
+        >
+          Хорошо ешьте
+        </h3>
         <p class="section__text">
           Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые
           препятствуют резким скачкам сахара в крови. Например, с высоким
           содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль),
           коричневый рис, хлеб из цельнозерновой пшеницы.
         </p>
-        <h3 class="section__sub-title accent-color titles">Читайте</h3>
+        <h3
+          class="section__sub-title accent-color titles section-increased-concentration__sub-title"
+        >
+          Читайте
+        </h3>
         <p class="section__text">
           Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
           прочитать пост в соцсети, достаточно нескольких минут или даже секунд.
@@ -161,28 +181,36 @@
           тренирует направленное внимание.
         </p>
       </section>
-      <section class="section-images">
-        <h2 class="section__title accent-color">А можно в картинках?</h2>
-        <img src="./images/sunset.png" alt="закат на фоне гор и озера" />
+      <section class="section-images content-section">
+        <h2 class="accent-color titles">А можно в картинках?</h2>
         <img
+          loading="lazy"
+          src="./images/sunset.png"
+          alt="закат на фоне гор и озера"
+        />
+        <img
+          loading="lazy"
           src="./images/ice-cream.png"
           alt="мороженное в миске, где шарики показывают разные эмоции"
         />
         <img
+          loading="lazy"
           src="./images/tape.png"
           alt="аудиокассета с декоративными элементами"
         />
         <img
+          loading="lazy"
           src="./images/books.png"
           alt="стопка книг с чашечкой кофе наверху"
         />
         <img
+          loading="lazy"
           src="./images/street.png"
           alt="китайский квартал в розово-фиолетовых тонах"
         />
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer content-section">
       <p class="footer__text">focus</p>
     </footer>
     <script src="./scripts/script.js"></script>

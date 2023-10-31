@@ -1,7 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  min-inline-size: 375px;
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -17,10 +20,55 @@
   background-color: var(--accent-color);
 }
 
-.main {
-  background-color: #000028;
+.header__title {
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: var(--main-font);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  margin-block: 65px 55px;
 }
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  border: none;
+  background-color: initial;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid currentColor;
+}
+
+.content-section {
+  padding-inline: 10px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  margin-block: 50px 20px;
+}
+
+/* .section-increased-concentration__second-title {
+  color: var(--title-color)
+} */
 
 .section__text {
   color: var(--text-color);
 }
+
+.content-section .section__text:not(:last-of-type) {
+  padding-block: 10px 20px;
+}
+
+.section-increased-concentration__sub-title {
+  font-weight: 400;
+}
+
