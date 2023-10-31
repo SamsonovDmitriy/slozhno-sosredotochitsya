@@ -1,5 +1,26 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  min-inline-size: 375px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.titles {
+  font-family: var(--main-font), arial, sans-serif;
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.accent-color {
+  background-color: var(--accent-color);
+}
+
+.main {
+  background-color: #000028;
+}
+
+.section__text {
+  color: var(--text-color);
 }
