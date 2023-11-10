@@ -16,4 +16,6 @@
   --border-color: #ff0070;
   --opacity: 1;
   --focus-color: #f1b2ce;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --hover-color: rgba(255, 0, 112, 0.40);
 }
