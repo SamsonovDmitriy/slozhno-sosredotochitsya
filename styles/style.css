@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 .page {
 	font-family: var(--main-font), monospace, sans-serif;
 	background-color: var(--bg-color);
@@ -56,7 +55,6 @@
 }
 
 .header__record-sign {
-	content: 'rec';
 	position: absolute;
 	color: var(--rec-color);
 	font-weight: 400;
@@ -129,7 +127,10 @@
 
 .header__theme-menu-button:focus {
 	outline: none;
-	text-decoration: underline currentColor;
+}
+
+.header__theme-menu-button:focus-visible {
+	border-block-end: 1px solid var(--border-color);
 }
 
 .header__text {
@@ -158,7 +159,7 @@
 }
 
 .section-link:hover {
-	text-decoration: underline;
+	border-block-end: 1px solid var(--focus-color);
 }
 
 .section-link:focus {
@@ -234,6 +235,10 @@
 
 .footer__title {
 	text-shadow: 2px 2px 0 var(--accent-color);
+	color: var(--main-title-color);
+	font-weight: 700;
+	font-size: var(--title-font-size);
+	line-height: 82.5%;
 }
 
 /* дальше идут media запросы */
@@ -279,6 +284,7 @@
 	.section-reasons__title {
 		margin-block-start: 0;
 		max-inline-size: 236px;
+		margin-block-end: 0;
 	}
 
 	.section-reduced-concentration__title {
@@ -338,10 +344,6 @@
 		justify-content: center;
 	}
 
-	.header__title {
-		font-size: 157px;
-	}
-
 	.header__text {
 		max-inline-size: 490px;
 	}
@@ -369,7 +371,6 @@
 	}
 
 	.section-increased-concentration__title {
-		margin-block-start: 0;
 		max-inline-size: 304px;
 	}
 }
